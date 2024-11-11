@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontrolinis</title>
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <h1>Simple Interest Calculator</h1>
+    <form id="interestCalculator">
+      <label for="amount">Amount</label>
+      <input id="amount" type="number">
+      <br>
+      <label for="interest"> Interest Rate</label>
+      <input id="interest" min="1" max="100" value="50" type="range">
+      <br>
+      <label for="years">No. of Years</label>
+      <input id="years" type="number">
+      <br>
+      <input type="submit" value="submit">
+
+      <p>if you deposit <span id="amountOutput"></span></p>
+      <p>at an interest rate of <span id="interestOutput"></span></p>
+      <p>You will receive an amount of <span id="totalOutput"></span>
+      in the year <span id="yearOutput"></span></p>
+    </form>
+  </body>
+</html>
